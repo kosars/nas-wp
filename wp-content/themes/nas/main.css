@@ -1,5 +1,5 @@
 @import "uikit.css" screen;
-
+ 
 header{
     height: 786px;
     background-image: url(img/header-background.jpg);
@@ -100,30 +100,12 @@ main section .double-block .block .icon-circle img{
     padding: 49px;
     height: 130px;
 }
-main section .news-block{
-    max-width: 1280px;
-    margin: 50px auto 30px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-}
-main section .news-block .block{
-    width: 414px;
-    margin-bottom: 40px;
-}
-main section .news-block .block img{
-    width: 414px;
-    height: 323px;
-    margin-bottom: 30px;
-}
 main section .news-links{
     max-width: 1280px;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -145,36 +127,7 @@ main section .monuments-block .content h2{
 main section .monuments-block .content .button{
     margin-top: 65px;
 }
-main section .calendar{
-    max-width: 1280px;
-    margin: 0px auto 75px auto;
-}
-main section .calendar .block{
-    padding: 35px 0px;
-    border-bottom: 1px #4b4f4d solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-main section .calendar .block:hover{
-    background-color: #f2f2ff;
-}
-main section .calendar .block .circle{
-    width: 162px;
-    height: 162px;
-    border-radius:50%;
-}
-main section .calendar .block .date{
-    margin-top: 40px;
-}
-main section .calendar .block .description{
-    width:400px;
-    margin-top: 26px;
-}
-main section .calendar .block .join{
-    margin-top: 54px;
-}
+
 main section .family-block{
     max-width:1280px;
     margin: 80px auto 0px auto;
@@ -226,24 +179,157 @@ main section .questions-donate-block .donate{
 }
 
 @media screen and (max-width: 1024px){
-    /* header{
-        background: none;
-        height: auto;
-    }
-    header section{
-        background-image: url(img/header-background.jpg);
-        padding-bottom: 100px;
-    }
-    header nav{
-        background-image: url(img/header-background.jpg);
-    } */
     header{
-        background-position: top 0px right -350px;
-        min-height: 640px;
-        height: auto;
+        background-position: top -50px right -580px;
+        width: 100%;
     }
     header section{
         padding-bottom: 100px;
+    }
+    .intro{
+        padding: 0;
+        margin-top: 100px;
+    }
+    .intro .intro-text{
+        font-size: 36px;
+    }
+    .intro .intro-subtext{
+        font-size: 18px;
+    }
+    main section .icon{
+        height: 30px;
+    }
+    main section .icon-1{
+        height: 45px;
+    }
+    main section .icon-7{
+        height: 50px;
+    }
+    main section .icon-8{
+        height: 50px;
+    } 
+     main section .icon-4{
+        height: 45px;
+    }/*
+    main section .icon-5{
+        height: 56px;
+    }
+    main section .icon-6{
+        height: 32px;
+    }*/
+    main section .double-block{
+        max-width: 1280px;
+        margin: 50px auto 0px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    main section .double-block .block{
+        max-width: 330px;
+        margin: 20px auto;
+    }
+    main section .double-block .block a{
+        margin-bottom: 40px;
+    }
+    main section .double-block .block p{
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    main section .double-block .block .icon-circle{
+        height: 140px;
+        width: 140px;
+        background-color:#00501f;
+        border-radius: 88px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    main section .double-block .block .icon-circle img{
+        padding: 30px;
+        height: 80px;
+    }
+    main section .monuments-block .content{
+        max-width: 330px;
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+    }
+    main section .monuments-block .content h2{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    main section .monuments-block .content .button{
+        margin-top: 65px;
+    }
+    main section .how-to{
+        margin-top: 0;
+    }
+    main section .how-to .block{
+        margin: 0 auto;
+    }
+    main section .how-to .block p{
+        margin-bottom: 40px;
+    }
+    .how-to .block h3{
+        text-align: left;
+    }
+    main section .family-block{
+        max-width:330px;
+        margin: 10px auto 0px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section .family-block .block{
+        max-width: 330px;
+    }
+    main section .family-block .text{
+        max-width: 330px;
+        padding-top: 0;
+        padding-left: 0px;
+    }
+    main section .family-block .block img{
+        width: 100%;
+    }
+    main section .family-block .block .family-link{
+        margin-top: 40px;
+        text-align: center;
+    }
+    main section .family-block .block h4{
+        font-family: 'OpenSans-Regular';
+        font-size: 18px;
+        margin-bottom: 26px;
+    }
+    main section .questions-donate-block{
+        max-width:100%;
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section .questions-donate-block .block{
+        max-width: 640px;
+        height: 550px;
+        padding-top: 0px;
+    }
+    main section .questions-donate-block .block h1{
+        text-align: left;
+    }
+    main section .questions-donate-block .block .button{
+        margin-top: 40px;
+    }
+    main section .questions-donate-block .donate{
+        padding-top: 25px;
+        max-width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-image: url(img/donate.jpg);
+        background-size: 120%;
+        background-position: top 0px left -5px;
     }
 }
 
