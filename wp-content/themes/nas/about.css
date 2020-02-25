@@ -1,0 +1,36 @@
+@import "uikit.css" screen;
+main section{
+
+}
+main .intro{
+    background-image: url(img/header-background-2.jpg);
+    height: 100%;
+    padding-left: 13%;
+    padding-top: 620px;
+    padding-bottom: 60px;
+}
+main .intro-text, main .intro-subtext{
+    max-width: 958px;
+    color:#fff;
+}
+main .intro-text{
+    font-family:'OpenSans-Bold';
+    font-size: 60px;
+}
+main .intro-subtext{
+    font-family:'OpenSans-Regular';
+    font-size: 27px;
+}
+main .text-carousel{
+    margin: 0 auto;  
+    padding-top: 32px;
+    width:848px;
+}
+main .text-carousel p{
+    padding: 18px 0px;
+}
+.icon-7{
+    height: 80px;
+    display: block;
+    margin: 0px auto;
+}

@@ -1,0 +1,54 @@
+User-agent: Yandex
+Disallow: /cgi-bin          
+Disallow: /?                # все параметры запроса на главной
+Disallow: /wp-  # все файлы WP: /wp-json/, /wp-includes, /wp-content/plugins
+Disallow: /xmlrpc.php
+Disallow: *?s=              # поиск
+Disallow: *&s=              # поиск
+Disallow: /search           # поиск
+Disallow: /author/          # архив автора
+Disallow: *?attachment_id=
+Disallow: */feed/
+Disallow: */page/           # все виды пагинации
+Disallow: /testimonial-view/
+Disallow: /team-view/
+Disallow: /tmp/
+Disallow: /tag/
+Disallow: /portfolio_tag/
+Allow: */uploads
+Allow: /*/*.js              # внутри /wp- (/*/ - для приоритета)
+Allow: /*/*.css             # внутри /wp- (/*/ - для приоритета)
+Allow: /wp-*.png            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.jpg            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.jpeg           # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.gif            # картинки в плагинах, cache папке и т.д.
+
+Host: nas.zp.ua
+
+User-agent: *
+Disallow: /cgi-bin  
+Disallow: /?                # все параметры запроса на главной
+Disallow: /wp-  # все файлы WP: /wp-json/, /wp-includes, /wp-content/plugins
+Disallow: /xmlrpc.php
+Disallow: *?s=              # поиск
+Disallow: *&s=              # поиск
+Disallow: /search           # поиск
+Disallow: /author/          # архив автора
+Disallow: *?attachment_id=
+Disallow: */feed/
+Disallow: */page/           # все виды пагинации
+Disallow: /testimonial-view/
+Disallow: /team-view/
+Disallow: /tmp/
+Disallow: /tag/
+Disallow: /portfolio_tag/
+Allow: */uploads
+Allow: /*/*.js              # внутри /wp- (/*/ - для приоритета)
+Allow: /*/*.css             # внутри /wp- (/*/ - для приоритета)
+Allow: /wp-*.png            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.jpg            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.jpeg           # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.gif            # картинки в плагинах, cache папке и т.д.
+
+Sitemap: http://nas.zp.ua/sitemap.xml.gz
+Sitemap: http://nas.zp.ua/sitemap-language.xml

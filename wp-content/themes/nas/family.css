@@ -1,0 +1,45 @@
+.family-pretext{
+    max-width: 732px;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.family-pretext h1{
+    text-align: left;
+}
+@media screen and (max-width: 1024px) {
+    .news-navigation{
+        max-width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .news-navigation .tags-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .news-navigation .tags-container .tag{margin-bottom: 15px;}
+    .news-navigation .find-container{
+        margin: 0 auto;
+        display: block;
+    }
+    .family-container .family-card{
+        width: 192px;
+        height: 300px;
+    }
+    .family-card .family-pic{
+        height: 150px;
+    }
+    .family-card .family-text{
+        padding: 0px;
+        padding-top: 12px;
+    }
+    .family-card .family-text h3{
+        font-size: 24px;
+    }
+    .family-description{
+        display: none;
+    }
+  }
