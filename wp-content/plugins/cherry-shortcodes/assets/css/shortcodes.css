@@ -8,10 +8,6 @@
 *:after {
   box-sizing: border-box; }
 
-img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto; }
 
 .cherry-clearfix:before, .cherry-clearfix:after {
   content: " ";

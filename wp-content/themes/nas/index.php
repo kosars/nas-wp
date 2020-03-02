@@ -29,6 +29,29 @@
                 </div>
             </div>
         </section>
+        <!-- динамичные новости -->
+        <section>
+            <img class="icon icon-4" src="<?php echo  get_template_directory_uri() ?>/img/icon-4.png" alt="icon">
+            <h1>НАШИ НОВОСТИ</h1>
+            <div class="news-container">
+                <?php
+                    $calendar_args = array(
+                        'post_type' => 'post',
+                        'numberposts' => 3,
+                        'publish' => 'true'
+                    );
+                    $calendar_posts = get_posts( $calendar_args);
+                    foreach ($calendar_posts as $post){
+                        include(get_template_directory(  ).'/templates/template_news_block.php');
+                    }
+                    wp_reset_postdata();
+                ?>
+            </div>
+            <div class="news-links">
+                <a href="" class="first">БОЛЬШЕ НОВОСТЕЙ</a>
+            </div>
+            
+        </section>
         <!-- новости -->
         <section>
             <img class="icon icon-4" src="<?php echo  get_template_directory_uri() ?>/img/icon-4.png" alt="icon">
@@ -134,60 +157,18 @@
             <img class="icon icon-6" src="<?php echo  get_template_directory_uri() ?>/img/icon-6.png" alt="icon">
             <h1>КАЛЕНДАРЬ СОБЫТИЙ</h1>
             <div class="calendar">
-                <div class="block">
-                    <div class="calendar-image">
-                        <img src="<?php echo  get_template_directory_uri() ?>/img/photo-2.jpg" alt="photo" class="circle">
-                    </div>
-                    <div class="calendar-content">
-                        <div class="content-name">
-                            <h3>Генералка <a class="location" href="https://www.google.com/maps/place/%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%B2%D0%BA%D0%B0,+%D0%97%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D0%B6%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+72355/@46.9301988,35.4449173,15z/data=!3m1!4b1!4m5!3m4!1s0x40dd4d48e91da01f:0x6cc2b02f9a2a2752!8m2!3d46.9304842!4d35.453825" target="_blank"><i class="fas fa-map-marker-alt"></i></a></h3>
-                            <p>Экспедиция</p>
-                        </div>
-                        <div class="content-description">
-                            <h3>11 сентября 2001</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eius vitae doloremque?</p>
-                        </div>
-                        <div class="join">
-                            <a href="" class="button">ПРИСОЕДЕНИТЬСЯ</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="calendar-image">
-                        <img src="<?php echo  get_template_directory_uri() ?>/img/photo-2.jpg" alt="photo" class="circle">
-                    </div>
-                    <div class="calendar-content">
-                        <div class="content-name">
-                            <h3>Генералка <a class="location" href="https://www.google.com/maps/place/%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%B2%D0%BA%D0%B0,+%D0%97%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D0%B6%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+72355/@46.9301988,35.4449173,15z/data=!3m1!4b1!4m5!3m4!1s0x40dd4d48e91da01f:0x6cc2b02f9a2a2752!8m2!3d46.9304842!4d35.453825" target="_blank"><i class="fas fa-map-marker-alt"></i></a></h3>
-                            <p>Экспедиция</p>
-                        </div>
-                        <div class="content-description">
-                            <h3>11 сентября 2001</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eius vitae doloremque?</p>
-                        </div>
-                        <div class="join">
-                            <a href="" class="button">ПРИСОЕДЕНИТЬСЯ</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="calendar-image">
-                        <img src="<?php echo  get_template_directory_uri() ?>/img/photo-2.jpg" alt="photo" class="circle">
-                    </div>
-                    <div class="calendar-content">
-                        <div class="content-name">
-                            <h3>Генералка <a class="location" href="https://www.google.com/maps/place/%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%B2%D0%BA%D0%B0,+%D0%97%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D0%B6%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+72355/@46.9301988,35.4449173,15z/data=!3m1!4b1!4m5!3m4!1s0x40dd4d48e91da01f:0x6cc2b02f9a2a2752!8m2!3d46.9304842!4d35.453825" target="_blank"><i class="fas fa-map-marker-alt"></i></a></h3>
-                            <p>Экспедиция</p>
-                        </div>
-                        <div class="content-description">
-                            <h3>11 сентября 2001</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eius vitae doloremque?</p>
-                        </div>
-                        <div class="join">
-                            <a href="" class="button">ПРИСОЕДЕНИТЬСЯ</a>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    $calendar_args = array(
+                        'post_type' => 'calendar',
+                        'numberposts' => 3,
+                        'publish' => 'true'
+                    );
+                    $calendar_posts = get_posts( $calendar_args);
+                    foreach ($calendar_posts as $post){
+                        include(get_template_directory(  ).'/templates/template_calendar_block.php');
+                    }
+                    wp_reset_postdata();
+                ?>
             </div>
             <div class="bottom-link">
                 <a href="">ВСЕ СОБЫТИЯ</a>
