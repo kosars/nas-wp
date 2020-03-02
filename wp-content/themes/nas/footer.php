@@ -42,5 +42,6 @@
             <a href="https://www.facebook.com/groups/327894417648353/?ref=group_header" target="_blank"><i class="fab fa-facebook-f"></i></a>
         </div>
     </footer>
+    <?php wp_footer(); ?>
 </body>
 </html>

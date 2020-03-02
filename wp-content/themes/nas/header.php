@@ -4,14 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="<?php bloginfo('sylesheet_url');?>">
-    <link rel="stylesheet" href="http://wptest/wp-content/themes/nas/uikit.css">
     <!-- Font Awesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script type='text/javascript' src='http://wptest/wp-content/themes/nas/js/insta-slider.js'></script>
-    <script type="text/javascript" src='http://wptest/wp-content/themes/nas/js/slider.js'></script>
     <?php wp_head(); ?>
-
-    <?php echo get_post_meta($post->ID, 'fc-my-script', true); ?>
-
-
+</head>
+<body>
+    <header>
+        <?php
+			if ( is_front_page() && is_home() ) :
+				?>
+				<nav class="nav-main">
+                    <input type="checkbox" id="checkbox-menu" />
+                    <label for="checkbox-menu">
+                        
+                    <ul class="menu touch">
+                        <li class="toggle-wrapper">
+                            <div class="toggle touch">
+                                <img src="img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
+                                <span class="toggle-lang"><a href="">EN</a></span>
+                                <img src="img/close.png" alt="" class="toggle-button">
+                            </div>
+                        </li>
+                        <li class="logo">
+                        <a href=""><img src="img/logo.png" alt="НАШ"/></a>
+                        </li>
+                        <li class="nav-link"><a href="">ШКОЛА</a></li>
+                        <li class="nav-link"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
+                        <li class="nav-link"><a href="">КАЛЕНДАРЬ</a></li>
+                        <li class="nav-link mobile"><a href="">ПРИНЯТЬ УЧАСТИЕ</a></li>
+                        <li class="nav-link mobile"><a href="">НОВОСТИ</a></li>
+                        <li class="nav-link mobile"><a href="">ПАМЯТНИКИ</a></li>
+                        <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
+                        <li class="lang"><a href="" class="active">RU</a></li>
+                        <li class="lang"><a href="">EN</a></li>
+                        <li class="help"><a href="" class="button">ПОМОЧЬ</a></li>
+                    </ul>
+                    <span class="toggle">
+                        <img src="img/logo.png" alt="НАШ" class="toggle-logo"/>
+                        <span class="toggle-lang"><a href="" class="invert-color">EN</a></span>
+                        <img src="img/menu.png" alt="" class="toggle-button">
+                    </span>
+                    </label>
+                </nav>
+                <section class="intro wrapper">
+                    <p class="intro-text">ПОЕХАЛИ <br>
+                        В ЭКСПЕДИЦИЮ
+                    </p>
+                    <p class="intro-subtext">Незабываемые события для всех,<br>
+                        кто любит историю
+                    </p>
+                    <a href="" class="button">ПРИСОЕДЕНИТЬСЯ</a>
+                </section>
+				<?php
+			else :
+				?>
+				<nav class="nav-page">
+                    <input type="checkbox" id="checkbox-menu" />
+                    <label for="checkbox-menu">
+                    <ul class="menu touch menu-dark">
+                        <li class="toggle-wrapper">
+                            <div class="toggle touch">
+                                <img src="img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
+                                <span class="toggle-lang"><a href="">EN</a></span>
+                                <img src="img/close.png" alt="" class="toggle-button">
+                            </div>
+                        </li>
+                        <li class="logo">
+                        <a href=""><img src="img/logo-dark.png" alt="НАШ"/></a>
+                        </li>
+                        <li class="nav-link"><a href="">ШКОЛА</a></li>
+                        <li class="nav-link"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
+                        <li class="nav-link"><a href="">КАЛЕНДАРЬ</a></li>
+                        <li class="nav-link mobile"><a href="">ПРИНЯТЬ УЧАСТИЕ</a></li>
+                        <li class="nav-link mobile"><a href="" class="active">НОВОСТИ</a></li>
+                        <li class="nav-link mobile"><a href="">ПАМЯТНИКИ</a></li>
+                        <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
+                        <li class="lang"><a href="" class="active">RU</a></li>
+                        <li class="lang"><a href="">EN</a></li>
+                        <li class="help"><a href="" class="button">ПОМОЧЬ</a></li>
+                    </ul>
+                    <span class="toggle">
+                        <img src="img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
+                        <span class="toggle-lang"><a href="">EN</a></span>
+                        <img src="img/menu.png" alt="" class="toggle-button invert-color">
+                    </span>
+                    </label>
+                </nav>
+			<?php endif; ?>
+        
+    </header>  
+    <main>            
