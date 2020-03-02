@@ -469,7 +469,15 @@ main section .double-container .row .block h2{
   padding-right: 25px; 
 }
 .news-container .news-card .news-text p{
-  height: 113px;
+  height: 126px;
+  margin-bottom: 10px;
+  overflow-y: hidden;
+}
+.news-container .news-card .news-text h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  height: 60px;
   overflow-y: hidden;
 }
 .news-container .news-card .news-text .button{

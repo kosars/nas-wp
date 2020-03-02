@@ -12,8 +12,7 @@
         <img src="<?php echo  get_the_post_thumbnail_url( get_the_ID(), 'family-news-prewiev'); ?>" alt="">
     </div>
     <div class="news-text">
-        <h5>Пост опубликован: <?php the_date(); ?></h5>
-        <h5><? the_date('j F Y');?></h5>
+        <h5><? echo get_the_date('j F Y', get_the_ID());?></h5>
         <h3><? the_title();?></h3>
         <p><?=$description ?></p>
         <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
