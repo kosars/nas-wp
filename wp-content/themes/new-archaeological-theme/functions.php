@@ -1,4 +1,4 @@
-<?php
+
 /**
  * New Archaeological Theme functions and definitions
  *

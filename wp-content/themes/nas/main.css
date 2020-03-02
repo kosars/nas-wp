@@ -2,7 +2,7 @@
  
 header{
     height: 786px;
-    background-image: url(img/header-background.jpg);
+    background-image: url(./img/header-background.jpg);
 }
 input, textarea{
     display: block;

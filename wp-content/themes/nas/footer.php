@@ -2,7 +2,7 @@
     <footer>
         <div class="footer-content">
             <div class="block footer-logo">
-                <a href=""><img src="http://wptest/wp-content/themes/nas/img/logo.png" alt="НАШ"></a>
+                <a href=""><img src="<?php echo get_template_directory_uri() ?>/img/logo.png" alt="НАШ"></a>
             </div>
             <div class="block">
                 <h1>ШКОЛА</h1>
