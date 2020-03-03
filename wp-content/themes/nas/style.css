@@ -1468,7 +1468,8 @@ main section .questions-donate-block .donate{
   .comment-date{
       color: #4b4f4d;
   }
-  .comment-form-container{
+  .comment-form-container,
+  .comment-form-comment{
       margin-left: 0px;
       max-width: 330px;
   }
