@@ -1,4 +1,17 @@
 <?php get_header();?>
+<?php
+		while ( have_posts() ) :
+			the_post();
+
+			get_template_part( 'templates/content', 'page' );
+
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+
+		endwhile; // End of the loop.
+		?>
 <section class="margin-top">
             <img class="icon icon-1" src="<?php echo  get_template_directory_uri() ?>/img/icon-1.png" alt="icon-1">
             <h1>ЧЕМ МЫ ЗАНИМАЕМСЯ</h1>
@@ -29,19 +42,19 @@
                 </div>
             </div>
         </section>
-        <!-- динамичные новости -->
+        <!-- новости -->
         <section>
             <img class="icon icon-4" src="<?php echo  get_template_directory_uri() ?>/img/icon-4.png" alt="icon">
             <h1>НАШИ НОВОСТИ</h1>
             <div class="news-container">
                 <?php
-                    $calendar_args = array(
+                    $news_args = array(
                         'post_type' => 'post',
                         'numberposts' => 3,
                         'publish' => 'true'
                     );
-                    $calendar_posts = get_posts( $calendar_args);
-                    foreach ($calendar_posts as $post){
+                    $news_posts = get_posts( $news_args);
+                    foreach ($news_posts as $post){
                         include(get_template_directory(  ).'/templates/template_news_block.php');
                     }
                     wp_reset_postdata();
@@ -50,63 +63,57 @@
             <div class="news-links">
                 <a href="" class="first">БОЛЬШЕ НОВОСТЕЙ</a>
             </div>
-            
         </section>
-        <!-- новости -->
-        <section>
-            <img class="icon icon-4" src="<?php echo  get_template_directory_uri() ?>/img/icon-4.png" alt="icon">
-            <h1>НАШИ НОВОСТИ</h1>
-            <div class="news-container">
-                <div class="news-card">
-                    <div class="news-pic">
-                        <img src="<?php echo  get_template_directory_uri() ?>/img/photo-1.jpg" alt="">
-                    </div>
-                    <div class="news-text">
-                        <h5>11 сентября 2001</h5>
-                        <h3>Археология для души</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                            praesentium voluptatem eaque perferendis adipisci, sequi quas sit
-                            fugit nemo!
-                        </p>
-                        <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="news-pic">
-                        <img src="<?php echo  get_template_directory_uri() ?>/img/photo-2.jpg" alt="">
-                    </div>
-                    <div class="news-text">
-                        <h5>11 сентября 2001</h5>
-                        <h3>Археология для души</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                            praesentium voluptatem eaque perferendis adipisci, sequi quas sit
-                            fugit nemo!
-                        </p>
-                        <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="news-pic">
-                        <img src="<?php echo  get_template_directory_uri() ?>/img/inst-3.jpg" alt="">
-                    </div>
-                    <div class="news-text">
-                        <h5>11 сентября 2001</h5>
-                        <h3>Археология для души</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                            praesentium voluptatem eaque perferendis adipisci, sequi quas sit
-                            fugit nemo!
-                        </p>
-                        <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
-                    </div>
-                </div>
+        <!-- sights-test -->
+        <section class="wrapper no-padding">
+            <div class="page-pretext">
+                <h1>НАШИ ПАМЯТНИКИ</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia eligendi, dolor deleniti facilis, numquam quidem iste, rerum perspiciatis nesciunt minus omnis sit porro obcaecati hic cum rem voluptatum sequi!</p>
             </div>
-            <div class="news-links">
-                <a href="" class="first">БОЛЬШЕ НОВОСТЕЙ</a>
+        </section>
+        <section class="no-padding">
+            <?php
+                $sight_args = array(
+                    'post_type' => 'sight',
+                    //'numberposts' => 3,
+                    'publish' => 'true'
+                );
+                $sight_posts = get_posts( $sight_args);
+                foreach ($sight_posts as $post){
+                    include(get_template_directory(  ).'/templates/template_sight_block.php');
+                }
+                wp_reset_postdata();
+            ?>
+        </section>
+        <!-- family-test -->
+        <section class="wrapper">
+            <div class="family-pretext">
+                <h1>НАША СЕМЬЯ</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia eligendi, dolor deleniti facilis, numquam quidem iste, rerum perspiciatis nesciunt minus omnis sit porro obcaecati hic cum rem voluptatum sequi!</p>
             </div>
-            
+            <div class="news-navigation">
+                <span class="tags-container">
+                    <a href="" class="tag active">ВСЕ</a>
+                    <a href="" class="tag">ЭТИ</a>
+                    <a href="" class="tag">ТЕ</a>
+                    <a href="" class="tag">ОНИ</a>
+                </span>
+            </div>
+            <div class="family-container">
+                <?php
+                    $family_args = array(
+                        'post_type' => 'family',
+                        //'numberposts' => 3,
+                        'publish' => 'true'
+                    );
+                    $family_posts = get_posts( $family_args);
+                    foreach ($family_posts as $post){
+                        include(get_template_directory(  ).'/templates/template_team_block.php');
+                    }
+                    wp_reset_postdata();
+                ?>
+            </div>
+            <a href="" class="button centered">ВСЯ СЕМЬЯ</a>
         </section>
         <!-- памятники -->
         <section>

@@ -77,6 +77,38 @@ function calendar_init(){
 		// 'supports'           => array('title','editor','author','thumbnail','excerpt','comments')
 	) );
 }
+add_action( 'init', 'sights_init' );
+function sights_init(){
+	register_post_type('sight', array(
+		'labels'             => array(
+			'name'               => 'Памятники', // Основное название типа записи
+			'singular_name'      => 'Памятник', // отдельное название записи типа Book
+			'add_new'            => 'Добавить памятник',
+			'add_new_item'       => 'Добавить новый памятник',
+			'edit_item'          => 'Редактировать памятник',
+			'new_item'           => 'Новый памятник',
+			'view_item'          => 'Посмотреть памятник',
+			'search_items'       => 'Найти памятники',
+			'not_found'          => 'Памятник не найден',
+			'not_found_in_trash' => 'В мусоре памятники не найдёшь',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Памятники'
+
+		  ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array('title','editor','thumbnail','excerpt','comments')
+		// 'supports'           => array('title','editor','author','thumbnail','excerpt','comments')
+	) );
+}
 //поддержка превьюшек для постов
 add_theme_support( 'post-thumbnails' );
 // 414x322 -- family/news
