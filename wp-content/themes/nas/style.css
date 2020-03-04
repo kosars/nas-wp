@@ -136,6 +136,12 @@ nav {
 .page-pretext h1{
   text-align: left;
 }
+.single-popup-image{
+  border: none;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
 .button {
   color: #fff;
   background: #00501f;

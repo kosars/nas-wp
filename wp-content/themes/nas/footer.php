@@ -7,17 +7,18 @@
             <div class="block">
                 <h1>ШКОЛА</h1>
                 <a href="">О нас</a>
-                <a href="<?php echo get_post_type_archive_link('sight'); ?>">Экспедиции</a>
+                
                 <a href="<?php echo get_post_type_archive_link('calendar'); ?>">Календарь</a>
                 <a href="">Как принять участие</a>
                 <a href="<?php echo get_post_type_archive_link('family'); ?>">Команда</a>
-                <a href="">Новости школы</a>
+                <a href="">Помощь</a>
             </div>
             <div class="block">
                 <h1>НАУЧНАЯ <br>ДЕЯТЕЛЬНОСТЬ</h1>
                 <a href="">НАШи статьи</a>
-                <a href="">Новости археологии</a>
-                <a href="">Заметки археологов</a>
+                <a href="">Новости</a>
+                <a href="<?php echo get_post_type_archive_link('sight'); ?>">Памятники</a>
+                <a href="">Подкаст</a>
                 <a href="">Сотрудничество</a>
             </div>
             <div class="block footer-contacts">

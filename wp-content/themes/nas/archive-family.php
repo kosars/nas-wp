@@ -5,14 +5,6 @@
                 <h1>НАША СЕМЬЯ</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia eligendi, dolor deleniti facilis, numquam quidem iste, rerum perspiciatis nesciunt minus omnis sit porro obcaecati hic cum rem voluptatum sequi!</p>
             </div>
-            <div class="news-navigation">
-                <span class="tags-container">
-                    <a href="" class="tag active">ВСЕ</a>
-                    <a href="" class="tag">ЭТИ</a>
-                    <a href="" class="tag">ТЕ</a>
-                    <a href="" class="tag">ОНИ</a>
-                </span>
-            </div>
             <div class="family-container">
                 <?php
                     $family_args = array(
