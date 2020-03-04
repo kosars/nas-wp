@@ -1,7 +1,7 @@
 <?php
     $description = get_post_meta(get_the_ID(), 'sight_description', true);
     $location  = get_post_meta(get_the_ID(), 'location_name', true);
-    
+    $url = get_permalink(get_the_ID());
     //the_meta(); 
 ?>
 
@@ -13,6 +13,6 @@
         <p class="monument-location"><?=$location ?></p>
         <h2 class="monument-name"><? the_title();?></h2>
         <p class="monument-description"><?=$description ?></p>
-        <a href="" class="button">УЗНАТЬ БОЛЬШЕ</a>
+        <a href="<?=$url ?>" class="button">УЗНАТЬ БОЛЬШЕ</a>
     </div>
 </div>

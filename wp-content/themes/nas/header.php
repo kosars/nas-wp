@@ -37,8 +37,8 @@
                         <li class="nav-link mobile"><a href="">НОВОСТИ</a></li>
                         <li class="nav-link mobile"><a href="">ПАМЯТНИКИ</a></li>
                         <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
-                        <li class="lang"><a href="" class="active">RU</a></li>
-                        <li class="lang"><a href="">EN</a></li>
+                        <li class="lang"><a href="" class="<?php if( pll_current_language() == 'ru') echo 'active';?>">RU</a></li>
+                        <li class="lang"><a href="" class="<?php if( pll_current_language() == 'en') echo 'active';?>">EN</a></li>
                         <li class="help"><a href="" class="button">ПОМОЧЬ</a></li>
                     </ul>
                     <span class="toggle">

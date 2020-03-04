@@ -4,6 +4,7 @@
     $date_end = strtotime(get_post_meta(get_the_ID(), 'event_date_end', true));
     $description = get_post_meta(get_the_ID(), 'event_description', true);
     $coords = get_post_meta(get_the_ID(), 'event_coords', true);
+    $url = get_permalink(get_the_ID());
     //the_meta(); 
 ?>
 <div class="block">
@@ -21,10 +22,10 @@
                 <?php   if(!empty(get_post_meta(get_the_ID(), 'event_date_end', true))){?> — <br> <?echo date_i18n('j F, Y', $date_end);}?>
                 <?php   if(!empty(get_post_meta(get_the_ID(), 'event_time_start', true))){?> в <?echo date_i18n('H:i', strtotime(get_post_meta(get_the_ID(), 'event_time_start', true)));}?>
             </h3>
-            <p><?php echo($description); ?></p>
+            <p><?=$description?></p>
         </div>
         <div class="join">
-            <a href="" class="button">ПРИСОЕДЕНИТЬСЯ</a>
+            <a href="<?=$url?>" class="button">ПРИСОЕДЕНИТЬСЯ</a>
         </div>
     </div>
 </div>

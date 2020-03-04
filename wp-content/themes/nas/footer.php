@@ -7,10 +7,10 @@
             <div class="block">
                 <h1>ШКОЛА</h1>
                 <a href="">О нас</a>
-                <a href="">Экспедиции</a>
-                <a href="">Календарь</a>
+                <a href="<?php echo get_post_type_archive_link('sight'); ?>">Экспедиции</a>
+                <a href="<?php echo get_post_type_archive_link('calendar'); ?>">Календарь</a>
                 <a href="">Как принять участие</a>
-                <a href="">Команда</a>
+                <a href="<?php echo get_post_type_archive_link('family'); ?>">Команда</a>
                 <a href="">Новости школы</a>
             </div>
             <div class="block">

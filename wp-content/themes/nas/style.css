@@ -90,6 +90,7 @@ nav {
   background: #00501f;
 }
 .menu .help .button {
+  border: 2px #00501f solid;
   width: 176px;
   margin-left: 44px;
 }
@@ -776,6 +777,11 @@ main .monument-container{
 .article-wrapper h1{
   margin:15px 0;
 }
+.article-wrapper img{
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
 .article-wrapper .article-pretext{
   font-size: 24px;
 }
@@ -934,8 +940,8 @@ main section .double-block .block .icon-circle{
     padding: 49px;
 }
 main section .double-block .block .icon-circle img{
-    /* padding: 49px; */
-    height: 130px;
+     padding: 29px;
+    height: 170px;
 }
 main section .news-links{
     max-width: 1280px;
@@ -966,29 +972,29 @@ main section .monuments-block .content .button{
 }
 
 main section .family-block{
-    max-width:1280px;
-    margin: 80px auto 0px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  max-width:1280px;
+  margin: 80px auto 0px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 main section .family-block .block{
-    max-width: 640px;
+  max-width: 640px;
 }
 main section .family-block .text{
-    max-width: 514px;
-    padding-top: 30px;
-    padding-left: 90px;
+  max-width: 514px;
+  padding-top: 30px;
+  padding-left: 90px;
 }
 main section .family-block .block img{
-    width: 100%;
+  width: 100%;
 }
 main section .family-block .block .family-link{
-    margin-top: 120px;
+  margin-top: 120px;
 }
 main section .family-block .block h4{
-    margin-bottom: 26px;
+  margin-bottom: 26px;
 }
 main section .questions-donate-block{
     max-width:1280px;
@@ -1603,14 +1609,14 @@ main section .questions-donate-block .donate{
         height: 140px;
         width: 140px;
         background-color:#00501f;
-        border-radius: 88px;
+        border-radius: 50%;
         margin: 0 auto;
         margin-bottom: 30px;
         padding: 30px;
     }
     main section .double-block .block .icon-circle img{
-        
-        height: 80px;
+        padding: 20px;
+        height: 100px;
     }
     main section .monuments-block .content{
         max-width: 330px;
