@@ -42,6 +42,8 @@
             <a href="https://www.facebook.com/groups/327894417648353/?ref=group_header" target="_blank"><i class="fab fa-facebook-f"></i></a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <?php wp_footer(); ?>
 </body>
 </html>
