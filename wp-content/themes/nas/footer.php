@@ -7,7 +7,6 @@
             <div class="block">
                 <h1>ШКОЛА</h1>
                 <a href="">О нас</a>
-                
                 <a href="<?php echo get_post_type_archive_link('calendar'); ?>">Календарь</a>
                 <a href="">Как принять участие</a>
                 <a href="<?php echo get_post_type_archive_link('family'); ?>">Команда</a>
@@ -15,11 +14,11 @@
             </div>
             <div class="block">
                 <h1>НАУЧНАЯ <br>ДЕЯТЕЛЬНОСТЬ</h1>
-                <a href="">НАШи статьи</a>
-                <a href="">Новости</a>
+                <a href="<?php echo get_site_url().'/tag/stati/'; ?>">НАШи статьи</a>
+                <a href="<?php echo get_site_url().'/archeo-news/'; ?>">Новости</a>
                 <a href="<?php echo get_post_type_archive_link('sight'); ?>">Памятники</a>
-                <a href="">Подкаст</a>
-                <a href="">Сотрудничество</a>
+                <!-- <a href="">Подкаст</a>
+                <a href="">Сотрудничество</a> -->
             </div>
             <div class="block footer-contacts">
                 <h1>КОНТАКТЫ</h1>
