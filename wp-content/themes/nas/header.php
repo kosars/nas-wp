@@ -31,10 +31,13 @@
                         <a href=""><img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="НАШ"/></a>
                         </li>
                         <li class="nav-link"><a href="">ШКОЛА</a></li>
-                        <li class="nav-link"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
+                        <!-- <li class="nav-link"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li> -->
+                        <li class="nav-link"><a href="">НОВОСТИ</a></li>
                         <li class="nav-link"><a href="">КАЛЕНДАРЬ</a></li>
+                        <li class="nav-link"><a href="">ПОДКАСТ</a></li>
                         <li class="nav-link mobile"><a href="">ПРИНЯТЬ УЧАСТИЕ</a></li>
-                        <li class="nav-link mobile"><a href="">НОВОСТИ</a></li>
+                        <!-- <li class="nav-link mobile"><a href="">НОВОСТИ</a></li> -->
+                        <li class="nav-link mobile"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
                         <li class="nav-link mobile"><a href="">ПАМЯТНИКИ</a></li>
                         <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
                         <li class="lang"><a href="" class="<?php if( pll_current_language() == 'ru') echo 'active';?>">RU</a></li>
@@ -49,11 +52,13 @@
                     </label>
                 </nav>
                 <section class="intro wrapper">
-                    <p class="intro-text">ПОЕХАЛИ <br>
-                        В ЭКСПЕДИЦИЮ
+                    <p class="intro-text">
+                        ПУТЕШЕСТВИЕ <br>
+                        СКВОЗЬ ВРЕМЯ
                     </p>
-                    <p class="intro-subtext">Незабываемые события для всех,<br>
-                        кто любит историю
+                    <p class="intro-subtext">
+                        С нами каждый может прикоснуться <br>
+                        прикоснуться к прошедшим тысячелетиям
                     </p>
                     <a href="" class="button">ПРИСОЕДЕНИТЬСЯ</a>
                 </section>
@@ -79,11 +84,11 @@
                         <li class="nav-link"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
                         <li class="nav-link"><a href="">КАЛЕНДАРЬ</a></li>
                         <li class="nav-link mobile"><a href="">ПРИНЯТЬ УЧАСТИЕ</a></li>
-                        <li class="nav-link mobile"><a href="" class="active">НОВОСТИ</a></li>
+                        <li class="nav-link mobile"><a href="">НОВОСТИ</a></li>
                         <li class="nav-link mobile"><a href="">ПАМЯТНИКИ</a></li>
                         <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
-                        <li class="lang"><a href="" class="active">RU</a></li>
-                        <li class="lang"><a href="">EN</a></li>
+                        <li class="lang"><a href="" class="<?php if( pll_current_language() == 'ru') echo 'active';?>">RU</a></li>
+                        <li class="lang"><a href="" class="<?php if( pll_current_language() == 'en') echo 'active';?>">EN</a></li>
                         <li class="help"><a href="" class="button">ПОМОЧЬ</a></li>
                     </ul>
                     <span class="toggle">

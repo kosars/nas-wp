@@ -2,7 +2,10 @@
       <section class="wrapper">
         <div class="family-pretext">
             <h1>КАЛЕНДАРЬ СОБЫТИЙ</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia eligendi, dolor deleniti facilis, numquam quidem iste, rerum perspiciatis nesciunt minus omnis sit porro obcaecati hic cum rem voluptatum sequi!</p>
+            <p>
+                Кроме регулярных собраний по средам и субботам на Немировича-Данченко 46а, мы ведем множество разных активностей. Они анонсированы здесь или в Инстаграмме 
+                <a href="https://www.instagram.com/new_archaeological_school/" target="_blank">@new_archaeological_school</a>
+            </p>
         </div>
         <div class="calendar">
             <?php

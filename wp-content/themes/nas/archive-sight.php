@@ -3,7 +3,7 @@
         <section class="wrapper no-padding">
             <div class="page-pretext">
                 <h1>НАШИ ПАМЯТНИКИ</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia eligendi, dolor deleniti facilis, numquam quidem iste, rerum perspiciatis nesciunt minus omnis sit porro obcaecati hic cum rem voluptatum sequi!</p>
+                <p>В Украине множество (более 150 тысяч) прекрасных ярких археологических объектов, большинство из которых сконцентрировано в красочных местах на берегах рек и морей, в горных хребтах и бескрайних степях. Организация археологических раскопок давно стала похожа на огромный волонтёрский проект, работающий на энтузиазме любителей древности.</p>
             </div>
         </section>
         <section class="no-padding">

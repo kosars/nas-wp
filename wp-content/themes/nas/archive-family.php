@@ -2,8 +2,10 @@
 <!-- family-test -->
 <section class="wrapper">
             <div class="family-pretext">
-                <h1>НАША СЕМЬЯ</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia eligendi, dolor deleniti facilis, numquam quidem iste, rerum perspiciatis nesciunt minus omnis sit porro obcaecati hic cum rem voluptatum sequi!</p>
+                <h1>НАША КОМАНДА</h1>
+                <p>НАШ — это прежде всего люди. 
+                    Те, кто несмотря на адские условия работает, чтобы совершить археологическое открытие. 
+                    Общая работа, быт, цели и интересы неизбежно превращают нас из “просто организации в большую семью”.</p>
             </div>
             <div class="family-container">
                 <?php

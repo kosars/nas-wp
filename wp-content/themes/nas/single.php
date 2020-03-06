@@ -9,6 +9,9 @@
 <section class="article-wrapper">
     <div class="article-info-container">
         <div class="article-category-container">
+        
+            <span class="article-category"><?php foreach(get_the_category() as $cat) echo $cat->name;?></span>
+            <span>—</span>
             <span class="article-date"><?php the_date('d.m.y'); ?></span>
         </div>
         
@@ -33,6 +36,9 @@
                         include(get_template_directory(  ).'/templates/template_news_block.php');
                     }
                     wp_reset_postdata();
+
+                    //new 
+ 
                 ?>
     </div>            
 </section>

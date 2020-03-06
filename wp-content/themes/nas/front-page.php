@@ -1,8 +1,8 @@
 <?php get_header();?>
 <section class="margin-top">
             <img class="icon icon-1" src="<?php echo  get_template_directory_uri() ?>/img/icon-1.png" alt="icon-1">
-            <h1>ЧЕМ МЫ ЗАНИМАЕМСЯ</h1>
-            <p class="centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>МЫ ХОТИМ СДЕЛАТЬ АРХЕОЛОГИЮ ДОСТУПНОЙ</h1>
+            <!-- <p class="centered">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
             <div class="border-bottom"></div>
             <div class="double-block">
                 <div class="block">
@@ -10,22 +10,16 @@
                         <img src="<?php echo  get_template_directory_uri() ?>/img/icon-2.png" alt="icon" class="icon">
                     </div>
                     <h2>Археологические экспедиции</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi praesentium voluptatem eaque perferendis adipisci,
-                         sequi quas sit fugit nemo! Commodi, tempora quam. Quos, 
-                         omnis fugiat? Numquam, sequi. Velit, tenetur temporibus.</p>
-                    <a href="">БЛИЖАЙШИЕ ЭКСПЕДИЦИ</a>
+                    <p>Солнце ярко светит, ветер бьет в лицо, в руках — тысячелетние артефакты, а в лагере — десятки друзей. Чего ещё желать?</p>
+                    <a href="<?php echo get_post_type_archive_link('sight'); ?>">НАШИ ЭКСПЕДИЦИ</a>
                 </div>
                 <div class="block">
                     <div class="icon-circle">
                         <img src="<?php echo  get_template_directory_uri() ?>/img/paper_white.svg" alt="icon" class="icon">
                     </div>
-                    <h2>Археологические экспедиции</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi praesentium voluptatem eaque perferendis adipisci,
-                         sequi quas sit fugit nemo! Commodi, tempora quam. Quos, 
-                         omnis fugiat? Numquam, sequi. Velit, tenetur temporibus.</p>
-                    <a href="">БЛИЖАЙШИЕ ЭКСПЕДИЦИ</a>
+                    <h2>Научная Деятельность</h2>
+                    <p>Мы постоянно работаем, анализируем и обрабатываем находки. И не зря — всё это мы показываем и рассказываем заинтересованной публике, а наши статьи публикуют в Австралии, Италии и Великобритании.</p>
+                    <a href="">КАК ПРИНЯТЬ УЧАСТИЕ</a>
                 </div>
             </div>
         </section>
@@ -55,14 +49,14 @@
         <section>
             <img class="icon icon-5" src="<?php echo  get_template_directory_uri() ?>/img/icon-5.png" alt="icon">
             <h1>НАШИ ПАМЯТНИКИ</h1>
-            <p class="centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae, numquam quis molestiae, sit magni nobis deserunt quae, illo exercitationem nihil temporibus iusto. Voluptatem, quas quo exercitationem dolores nisi quia.</p>
+            <p class="centered">Помимо множества коротких экспедиций, мы плотно увлекаемся доисторической археологией. Основной наш интерес на острове Хортица, на поселении первых индоевропейцев. Но мы увлекаемся и рассветом земледелия, и наскальной живописью и многими другими событиями древности.</p>
             <div class="border-bottom"></div>
             <div class="monuments-block">
                 <div class="wrapper">
                     <div class="content">
                         <h5>Запорожская область</h5>
                         <h2>Каменная могила</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad praesentium atque facere! Modi deserunt voluptates dolor hic nesciunt dolorum ducimus sapiente, rem, praesentium porro id fuga veniam culpa consequatur odit!</p>
+                        <p>Мы активно занимаемся исследованием наскальной живописи и быта древних людей на уникальном комплексе Каменная Могила. Последние 8 лет работаем тут в сотрудничестве с Институтом доистории города Берн (Швейцария)</p>
                         <a class="button">ПОСМОТРЕТЬ</a>                
                     </div>
                 </div>
@@ -123,16 +117,16 @@
             <h1>КАК ПРИНЯТЬ УЧАСТИЕ?</h1>
             <div class="double-block how-to">
                 <div class="block">
-                    <h3>Запаситесь временем</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore velit quo earum alias, aut eligendi distinctio officia nesciunt esse? Similique nesciunt non dignissimos distinctio sint dolores accusantium corporis adipisci qui.</p>
+                    <h3>Приезжайте в экспедицию</h3>
+                    <p>Мы всегда открыты для тех, кто хочет ощутить дыхание тысячелетий и совершить настоящее открытие.</p>
                 </div>
                 <div class="block">
-                    <h3>Приесжайте группой</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quis quaerat cum inventore dolorum laudantium, id fugiat reprehenderit tempore voluptatum vel ipsam? Eos repellendus molestiae blanditiis quis molestias! Eum, vero.</p>
+                    <h3>Привозите группу</h3>
+                    <p>Хотите приехать вместе со своими учениками, друзьями или коллегами? Каждую неделю мы принимаем группу молодых людей, заинтересованных в истории и археологии.</p>
                 </div>
                 <div class="block">
-                    <h3>Приходите на собрания</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id qui, minima, dignissimos error delectus hic, ea cumque molestias laborum quia similique rem nisi voluptatum vitae nihil impedit nemo? Numquam, distinctio.</p>
+                    <h3>Приходите в лабораторию</h3>
+                    <p>Настоящая магия происходит здесь — взаимодействие с культурным наследием, обработка материала, написание статей. А главное — вкусные печеньки и веселые игры.</p>
                 </div>
             </div>
             <div class="bottom-link">
@@ -142,18 +136,15 @@
         <!-- команда -->
         <section class="margin-top wrapper">
             <img class="icon icon-8" src="<?php echo  get_template_directory_uri() ?>/img/icon-8.png" alt="icon">
-            <h1>НАША СЕМЬЯ</h1>
+            <h1>НАША КОМАНДА</h1>
             <div class="family-block">
                 <div class="block">
                     <img src="<?php echo  get_template_directory_uri() ?>/img/Tu.jpg" alt="photo">
                 </div>
                 <div class="block text">
                     <h2>Олег Тубольцев</h2>
-                    <h4>Вождь</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi praesentium voluptatem eaque perferendis adipisci,
-                         sequi quas sit fugit nemo! Commodi, tempora quam. Quos, 
-                         omnis fugiat? Numquam, sequi. Velit, tenetur temporibus.
+                    <h4>Бессменный вождь</h4>
+                    <p>Лидер, глава, создатель и вдохновитель НАШего пространства. Он буквально живет своим делом, прививая нам страсть к эпохе бронзы и своим примером демонстрируя (как бы банально это ни было), что до истины стоит докапываться, не жалея сил. Столетия археологии воплотились в его многочисленных умениях, которыми он охотно делится с нами.
                     </p>
                     <div class="family-link">
                         <a href="" class="first">ВСЯ СЕМЬЯ</a>
@@ -175,10 +166,8 @@
                     </form>
                 </div>
                 <div class="block donate">
-                    <h1>CТАТЬ СПОНСОРОМ ЭКСПЕДИЦИЙ</h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi praesentium voluptatem eaque perferendis adipisci,
-                        sequi quas sit fugit nemo! Commodi, tempora quam.
+                    <h1>ПОМОГИТЕ НАШЕМУ НАСЛЕДИЮ</h1>
+                    <p> Мы не торговцы антиквариатом, а потому любая поддержка крайне важна для нашей науки. Без неё археология уже была бы в прошлом, как и предмет её изучения
                     </p>
                     <a href="" class="button">ПОМОЧЬ</a>
                     

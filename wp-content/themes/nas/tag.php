@@ -18,7 +18,8 @@
                         foreach( $cat as $item ){
                             if($item->slug == $current_cat_slug){$tags = 'tag active';}
                             else{$tags = 'tag';}
-                            echo '<a class="'.$tags.'" href="'.get_site_url().'/tag/'.$item->slug.'/">'. $item->name . '</a>';
+                            if( pll_current_language() == 'en') echo '<a class="'.$tags.'" href="'.get_site_url().'/en//tag/'.$item->slug.'/">'. $item->name . '</a>';
+                            else echo '<a class="'.$tags.'" href="'.get_site_url().'/tag/'.$item->slug.'/">'. $item->name . '</a>';
                     
                         }
                     }
