@@ -39,7 +39,6 @@
                 <?php
                     $news_args = array(
                         'post_type' => 'post',
-                        'category_name'    => $current_cat_slug,
                         'numberposts' => 6,
                         'publish' => 'true'
                     );
