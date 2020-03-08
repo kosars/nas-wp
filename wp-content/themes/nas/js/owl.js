@@ -1,6 +1,6 @@
-$(function() {
+jQuery(document).ready(function() {
     // Owl Carousel
-    var owl = $(".owl-sights");
+    var owl = jQuery(".owl-sights");
     owl.owlCarousel({
       items: 1,
       margin: 0,
@@ -8,9 +8,9 @@ $(function() {
       nav: false
     });
   });
-  $(function() {
+  jQuery(document).ready(function() {
     // Owl Carousel
-    var owl = $(".owl-post");
+    var owl = jQuery(".owl-post");
     owl.owlCarousel({
       items: 1,
       margin: 0,
@@ -19,9 +19,9 @@ $(function() {
     });
   });
   
-  $(function() {
+  jQuery(document).ready(function() {
     // Owl Carousel instagram
-    var owl = $(".owl-inst");
+    var owl = jQuery(".owl-inst");
     owl.owlCarousel({
       items: 4,
       margin: 10,

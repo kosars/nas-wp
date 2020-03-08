@@ -32,7 +32,7 @@
                     $news_args = array(
                         'post_type' => 'post',
                         'tag' => $current_cat_slug,
-                        //'numberposts' => 3,
+                        'numberposts' => 6,
                         'publish' => 'true'
                     );
                     $news_posts = get_posts( $news_args);

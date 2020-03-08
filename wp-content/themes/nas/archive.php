@@ -40,7 +40,7 @@
                     $news_args = array(
                         'post_type' => 'post',
                         'category_name'    => $current_cat_slug,
-                        'numberposts' => 6,
+                        'posts_per_page' => 6,
                         'publish' => 'true'
                     );
                     $news_posts = get_posts( $news_args);
