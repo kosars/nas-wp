@@ -1,5 +1,5 @@
 <?php
-    $description = get_post_meta(get_the_ID(), 'sight_description', true);
+    $description = get_post_meta(get_the_ID(), 'slide_text', true);
     $location  = get_post_meta(get_the_ID(), 'location_name', true);
     $url = get_permalink(get_the_ID());
     //the_meta(); 
@@ -9,7 +9,7 @@
         <div class="content">
             <h5><?=$location ?></h5>
             <h2><? the_title();?></h2>
-            <p>Мы активно занимаемся исследованием наскальной живописи и быта древних людей на уникальном комплексе Каменная Могила. Последние 8 лет работаем тут в сотрудничестве с Институтом доистории города Берн (Швейцария)</p>
+            <p><?=$description ?></p>
             <a href="<?=$url ?>" class="button">ПОСМОТРЕТЬ</a>                
         </div>
     </div>

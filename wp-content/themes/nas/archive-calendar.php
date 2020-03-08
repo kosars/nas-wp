@@ -4,7 +4,7 @@
             <h1>КАЛЕНДАРЬ СОБЫТИЙ</h1>
             <p>
                 Кроме регулярных собраний по средам и субботам на Немировича-Данченко 46а, мы ведем множество разных активностей. Они анонсированы здесь или в Инстаграмме 
-                <a href="https://www.instagram.com/new_archaeological_school/" target="_blank">@new_archaeological_school</a>
+                <a href="https://www.instagram.com/new_archaeological_school/" target="_blank" class="insta-link">@new_archaeological_school</a>
             </p>
         </div>
         <div class="calendar">

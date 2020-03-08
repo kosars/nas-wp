@@ -31,21 +31,9 @@
                             </div>
                         </li>
                         <li class="logo">
-                        <a href=""><img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="НАШ"/></a>
+                        <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="НАШ"/></a>
                         </li>
-                        <li class="nav-link"><a href="">ШКОЛА</a></li>
-                        <!-- <li class="nav-link"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li> -->
-                        <li class="nav-link"><a href="">НОВОСТИ</a></li>
-                        <li class="nav-link"><a href="">КАЛЕНДАРЬ</a></li>
-                        <li class="nav-link"><a href="">ПОДКАСТ</a></li>
-                        <li class="nav-link mobile"><a href="">ПРИНЯТЬ УЧАСТИЕ</a></li>
-                        <!-- <li class="nav-link mobile"><a href="">НОВОСТИ</a></li> -->
-                        <li class="nav-link mobile"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
-                        <li class="nav-link mobile"><a href="">ПАМЯТНИКИ</a></li>
-                        <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
-                        <li class="lang"><a href="" class="<?php if( pll_current_language() == 'ru') echo 'active';?>">RU</a></li>
-                        <li class="lang"><a href="" class="<?php if( pll_current_language() == 'en') echo 'active';?>">EN</a></li>
-                        <li class="help"><a href="" class="button">ПОМОЧЬ</a></li>
+                        <?php include(get_template_directory(  ).'/templates/template-header-nav.php');?>
                     </ul>
                     <span class="toggle">
                         <img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="НАШ" class="toggle-logo"/>
@@ -81,18 +69,9 @@
                             </div>
                         </li>
                         <li class="logo">
-                        <a href=""><img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ"/></a>
+                        <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ"/></a>
                         </li>
-                        <li class="nav-link"><a href="">ШКОЛА</a></li>
-                        <li class="nav-link"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
-                        <li class="nav-link"><a href="">КАЛЕНДАРЬ</a></li>
-                        <li class="nav-link mobile"><a href="">ПРИНЯТЬ УЧАСТИЕ</a></li>
-                        <li class="nav-link mobile"><a href="">НОВОСТИ</a></li>
-                        <li class="nav-link mobile"><a href="">ПАМЯТНИКИ</a></li>
-                        <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
-                        <li class="lang"><a href="" class="<?php if( pll_current_language() == 'ru') echo 'active';?>">RU</a></li>
-                        <li class="lang"><a href="" class="<?php if( pll_current_language() == 'en') echo 'active';?>">EN</a></li>
-                        <li class="help"><a href="" class="button">ПОМОЧЬ</a></li>
+                        <?php include(get_template_directory(  ).'/templates/template-header-nav.php');?>
                     </ul>
                     <span class="toggle">
                         <img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ" class="toggle-logo"/>

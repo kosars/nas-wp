@@ -581,13 +581,22 @@ main section .double-container .row .block h2{
   border: none;
    color: #00501f;
 }
+.insta-link{
+  border: none;
+  color: #00501f;
+}
 .instagram-slider {
   position: relative;
   overflow: hidden;
 }
-
-.slider__wrapper {
+.instagram-carousel .item{
+  height: 330px;
+  width: 330px;
+  background-color: #00501f;
+}
+.slider__wrapper{
   display: flex;
+  flex-direction: row;
   transition: transform 0.6s ease;
 }
 
@@ -715,6 +724,40 @@ main section .double-container .row .block h2{
 }
 .calendar .block .join{
   margin-top: 25px;
+}
+main .intro-about{
+  width: 100%;
+  position: relative;
+  padding-bottom: 0;
+}
+main .intro-img{
+  width: 100%;
+}
+main .intro-text-block{
+  position: absolute;
+  margin: 0 auto;
+  bottom: 65px;
+}
+main .intro-text, main .intro-subtext{
+  margin-left: 109px;
+  max-width: 965px;
+  color:#fff;
+}
+main .intro-text{
+  font-family:'OpenSans-Bold';
+  font-size: 60px;
+}
+main .intro-subtext{
+  font-family:'OpenSans-Regular';
+  font-size: 27px;
+}
+main .text-carousel{
+  margin: 0 auto;  
+  padding-top: 32px;
+  width:848px;
+}
+main .text-carousel p{
+  padding: 18px 0px;
 }
 main .monument-container{
   display: flex;
@@ -959,10 +1002,11 @@ main section .news-links{
     flex-wrap: wrap;
 }
 main section .monuments-block{
+    color: #fff;
     width: 100%;
     height: 720px;
     margin: 50px 0px;
-    background-image: url(./img/pamyatniki-background.jpg);
+    /* background-image: url(./img/pamyatniki-background.jpg); */
 }
 main section .monuments-block .content{
     max-width: 500px;
@@ -1050,6 +1094,47 @@ main section .questions-donate-block .donate{
   }
 }
 @media screen and (max-width: 1024px) {
+  main .intro-about .wrapper{
+    width: 100%;
+    margin: 0 15px;  
+  }
+  main .intro-about{
+      width: 100%;
+      position: block;
+      padding-bottom: 0;
+  }
+  main .intro-img{
+      width: 100%;
+  }
+  main .intro-text-block{
+      position: static;
+      width: 100%;
+      margin: 0;  
+  }
+  main .intro-text, main .intro-subtext{
+      margin-left: 0px;
+      color:#000;
+  }
+  main .intro-text{
+      font-family:'OpenSans-Bold';
+      font-size: 35px;
+  }
+  main .intro-subtext{
+      font-family:'OpenSans-Regular';
+      font-size: 18px;
+  }
+  main .text-carousel{
+      width: 100%;
+  }
+  main .text-carousel p{
+      margin: 0 15px;  
+      max-width: 100%;
+      padding-top: 32px;
+  }
+  main .text-carousel p{
+      padding:0px;
+      padding-bottom: 36px;
+  }
   main section{
     padding-bottom: 40px;
   }
@@ -1248,14 +1333,14 @@ main section .questions-donate-block .donate{
   .slider__wrapper {
   }
   .slider__item {
-    height: 254px;
-    max-width: 264px;
+    height: 330px;
+    max-width: 330px;
     
     border: none;
     transition: 0ms;
   }
   .slider__item img{
-    height: 254px;
+    height: 330px;
     margin: 0px 5px;
   }
   .slider__control {
@@ -1324,6 +1409,7 @@ main section .questions-donate-block .donate{
   .calendar .block .join{
     margin-top: 25px;
   }
+  
   main .green {
     padding-top: 50px;
   }
