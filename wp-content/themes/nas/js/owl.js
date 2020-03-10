@@ -38,6 +38,10 @@ jQuery(document).ready(function() {
         1180:{
           items:3
         },
+        1366:{
+          items:4,
+          margin: 0,
+        },
         1380:{
           items:4,
           margin: 10,

@@ -1020,6 +1020,9 @@ main section .monuments-block .content h2{
 main section .monuments-block .content .button{
     margin-top: 65px;
 }
+.nav-link, .lang, .help, .button, .toggle-lang{
+  text-transform: uppercase;
+}
 
 main section .family-block{
   max-width:1280px;
@@ -1081,12 +1084,6 @@ main section .questions-donate-block .donate{
 }
 .family-pretext h1{
   text-align: left;
-}
-@media screen and (max-width:1366px){
-    .calendar .block .circle{
-        height: 132px;
-        border-radius:50%;
-      }
 }
 @media screen and (max-width: 1110px) {
   .menu .logo {

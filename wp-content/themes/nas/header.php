@@ -13,8 +13,44 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    
-        <?php
+            <?php
+            $languages = pll_the_languages( array(
+                'display_names_as'       => 'slug',
+                'hide_if_no_translation' => 1,
+                'raw'                    => true
+              ) ); 
+             // Creates the $output variable with languages container
+            $output = '';
+            $output_toggle= '';
+            $output_toggle_invert='';
+
+            // Runs the loop through all languages
+            foreach ( $languages as $language ) {
+
+                // Variables containing language data
+                $id             = $language['id'];
+                $slug           = $language['slug'];
+                $url            = $language['url'];
+                $current        = $language['current_lang'] ? ' languages__item--current' : '';
+                $no_translation = $language['no_translation'];
+
+                // Checks if the page has translation in this language
+                if ( ! $no_translation ) {
+                    // Check if it's current language
+                    if ( $current ) {
+                        // Output the language in a <span> tag so it's not clickable
+                        //$output .= "<span class=\"languages__item$current\">$slug</span>";
+                        $output .= "<li class='lang'><a class='active'>$slug</a></li>";
+                    } else {
+                        // Output the language in an anchor tag
+                        //$output .= "<a href=\"$url\" class=\"languages__item$current\">$slug</a>";
+                        $output .= "<li class='lang'><a href=\"$url\">$slug</a></li>";
+                        echo '_lang_'.$slug;
+                        $output_toggle= "<a href=\"$url\" >$slug</a>";
+                        $output_toggle_invert= "<a href=\"$url\" class='invert-color'>$slug</a>";
+                    }
+                }
+            }
 			if ( is_front_page() || is_home() ) :
                 ?>
                 <header class="header-main">
@@ -26,7 +62,8 @@
                         <li class="toggle-wrapper">
                             <div class="toggle touch">
                                 <img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
-                                <span class="toggle-lang"><a href="">EN</a></span>
+                                <!-- <span class="toggle-lang"><a href="">EN</a></span> -->
+                                <span class="toggle-lang"><?php echo $output_toggle;?></span>
                                 <img src="<?php echo get_template_directory_uri()?>/img/close.png" alt="" class="toggle-button">
                             </div>
                         </li>
@@ -37,7 +74,8 @@
                     </ul>
                     <span class="toggle">
                         <img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="НАШ" class="toggle-logo"/>
-                        <span class="toggle-lang"><a href="" class="invert-color">EN</a></span>
+                        <!-- <span class="toggle-lang"><a href="" class="invert-color">EN</a></span> -->
+                        <span class="toggle-lang"><?php echo $output_toggle_invert;?></span>
                         <img src="<?php echo get_template_directory_uri()?>/img/menu.png" alt="" class="toggle-button">
                     </span>
                     </label>
