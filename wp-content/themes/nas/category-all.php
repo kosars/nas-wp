@@ -49,6 +49,7 @@
                     wp_reset_postdata();
                 ?>
         </div>
+        <?php get_the_posts_pagination();?>
         <a href="" class="button centered">БОЛЬШЕ НОВОСТЕЙ</a>
       </section>
 <?php get_footer();?>  

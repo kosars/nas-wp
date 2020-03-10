@@ -42,6 +42,6 @@
                     wp_reset_postdata();
                 ?>
         </div>
-        <a href="" class="button centered">БОЛЬШЕ НОВОСТЕЙ</a>
+        <a href="" class="button centered load-more">БОЛЬШЕ НОВОСТЕЙ</a>
       </section>
 <?php get_footer();?>  
