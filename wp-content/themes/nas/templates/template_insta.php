@@ -1,11 +1,21 @@
 <!-- инста -->
 
 <section>
-    <div class="instagram-text">
-        <h1>#НАШ</h1>
-        <p>Больше о наших экспедициях в Instagram. <br>
-            Подписывайтесь, будет интересно! <a href="https://www.instagram.com/new_archaeological_school/" target="_blank">@new_archaeological_school</a></p>
-    </div>
+    <?php if( pll_current_language() == 'en'):?>
+        <div class="instagram-text">
+            <h1>#NAS</h1>
+            <p>More about our expeditions here in Instagram.<br>
+            Subscribe, it will be interesting! <a href="https://www.instagram.com/new_archaeological_school/" target="_blank">@new_archaeological_school</a></p>
+        </div>
+    <?php else:?>
+        <div class="instagram-text">
+            <h1>#НАШ</h1>
+            <p>Больше о наших экспедициях в Instagram.<br>
+                Подписывайтесь, будет интересно! <a href="https://www.instagram.com/new_archaeological_school/" target="_blank">@new_archaeological_school</a></p>
+        </div>
+    <?php endif; ?>
+    
+    
     <div class="owl-carousel owl-inst">
             <a class="slider__item" href="https://www.instagram.com/p/B7dU4M7JKNs/" target="_blank" ><img srcset="https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/e35/c160.0.960.960a/s150x150/80693890_613876039374652_6668239987261047103_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=LiA0e8_83BQAX_oGnXo&oh=dbdefc1a6479bb44eb079d34163783b1&oe=5EB7F358 150w,https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/e35/c160.0.960.960a/s240x240/80693890_613876039374652_6668239987261047103_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=LiA0e8_83BQAX_oGnXo&oh=a7a9564107a5e52148e7c5b0f31d2b16&oe=5EBDB712 240w,https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/e35/c160.0.960.960a/s320x320/80693890_613876039374652_6668239987261047103_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=LiA0e8_83BQAX_oGnXo&oh=55a516d9cc1174d04b399c3423c0a17b&oe=5EC37DA8 320w,https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/e35/c160.0.960.960a/s480x480/80693890_613876039374652_6668239987261047103_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=LiA0e8_83BQAX_oGnXo&oh=37ff96ff3a4b3cdb4f8b1811ede45510&oe=5EC849F2 480w,https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c160.0.960.960a/s640x640/80693890_613876039374652_6668239987261047103_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=LiA0e8_83BQAX_oGnXo&oh=5b5ed075c705a2c40fd784de016318c8&oe=5ED7B230 640w" alt=""></a>
             <a class="slider__item" href="https://www.instagram.com/p/B6qzIxHJi6i/" target="_blank" ><img srcset="https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/e35/c135.0.810.810a/s150x150/75372349_456428428633963_95709526425643_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=JJxkZ8ldZpkAX9mvmh-&oh=cdc7c4656497707f40ec9f1f30f61bb0&oe=5ED0A01B 150w,https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/e35/c135.0.810.810a/s240x240/75372349_456428428633963_95709526425643_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=JJxkZ8ldZpkAX9mvmh-&oh=1f04f82df16e295255e436eac8cf657a&oe=5ED1DA7D 240w,https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/e35/c135.0.810.810a/s320x320/75372349_456428428633963_95709526425643_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=JJxkZ8ldZpkAX9mvmh-&oh=cb6f894dd6ff1ca5ab1c601345fa8313&oe=5EBEA888 320w,https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/e35/c135.0.810.810a/s480x480/75372349_456428428633963_95709526425643_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=JJxkZ8ldZpkAX9mvmh-&oh=2ee4520d84d7327e5db558be179eaca0&oe=5ECE951C 480w,https://instagram.fiev25-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c135.0.810.810a/s640x640/75372349_456428428633963_95709526425643_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=JJxkZ8ldZpkAX9mvmh-&oh=f6cc54bc1c283274637e826b79c287de&oe=5ECF5BA4 640w" alt=""></a>

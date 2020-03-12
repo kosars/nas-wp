@@ -6,7 +6,12 @@ if ( post_password_required() ) {
 <section id="comments" class="comments wrapper comments-area">
 	<?php if ( have_comments() ) :?>
 	<?php the_comments_navigation(); ?>
-    <h1>КОММЕНТАРИИ</h1>
+    <?php if( pll_current_language() == 'en'):?>
+        <h1>COMMENTS</h1>
+    <?php else:?>
+        <h1>КОММЕНТАРИИ</h1>
+    <?php endif; ?>
+    
     <div class="comments-container">
         <!-- <div class="comment">
             <p class="comment-name">Анастасия Саламаха</p>
