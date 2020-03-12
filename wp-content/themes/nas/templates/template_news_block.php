@@ -10,7 +10,7 @@
 ?>
 <div class="news-card">
     <div class="news-pic">
-        <img src="<?php echo  get_the_post_thumbnail_url( get_the_ID(), 'family-news-prewiev'); ?>" alt="">
+        <img src="<?php echo  get_the_post_thumbnail_url( get_the_ID(), 'large'); ?>" alt="">
     </div>
     <div class="news-text">
         <h5><? echo get_the_date('j F Y', get_the_ID());?></h5>

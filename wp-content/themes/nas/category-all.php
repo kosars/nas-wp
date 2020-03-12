@@ -39,7 +39,8 @@
                 <?php
                     $news_args = array(
                         'post_type' => 'post',
-                        'numberposts' => 6,
+                        'numberposts' => -1,
+                        //'numberposts' => 6,
                         'publish' => 'true'
                     );
                     $news_posts = get_posts( $news_args);
@@ -50,6 +51,7 @@
                 ?>
         </div>
         <?php get_the_posts_pagination();?>
-        <a href="" class="button centered">БОЛЬШЕ НОВОСТЕЙ</a>
+        <!-- <a href="" class="button centered">БОЛЬШЕ НОВОСТЕЙ</a> -->
+        <a href="<?php echo get_site_url(); ?>" class="button centered">НА ГЛАВНУЮ</a>
       </section>
 <?php get_footer();?>  

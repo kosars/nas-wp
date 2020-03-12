@@ -40,6 +40,10 @@ nav {
   visibility: hidden;
   display: none;
 }
+.owl-post .owl-item img{
+  width: auto;
+  max-height: 600px;
+}
 .menu {
   padding: 0;
   margin: 0;

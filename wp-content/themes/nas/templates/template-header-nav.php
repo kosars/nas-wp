@@ -6,11 +6,11 @@
     <li class="nav-link mobile"><a href="">PARTICIPATE</a></li>
     <li class="nav-link mobile"><a href="<?php echo get_site_url().'/en/tag/nauchnaya-deyatelnost'; ?>">SCIENTIFIC ACTIVITY</a></li>
     <li class="nav-link mobile"><a href="<?php echo get_post_type_archive_link('sight'); ?>">SIGHTS</a></li>
-    <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
+    <li class="nav-link"><a href="">CONTACTS</a></li>
     <!-- <li class="lang"><a href="">RU</a></li>
     <li class="lang"><a href="" class="active">EN</a></li> -->
     <?php echo $output;?>
-    <li class="help"><a href="<?php echo get_site_url().'/en/help-en'; ?>" class="button">ПОМОЧЬ</a></li>
+    <li class="help"><a href="<?php echo get_site_url().'/en/help-en'; ?>" class="button">HELP</a></li>
 <?php else:?>
     <li class="nav-link"><a href="<?php echo get_site_url().'/about'; ?>">ШКОЛА</a></li>
     <li class="nav-link"><a href="<?php echo get_site_url().'/all'; ?>">НОВОСТИ</a></li>

@@ -32,7 +32,8 @@
                     $news_args = array(
                         'post_type' => 'post',
                         'tag' => $current_cat_slug,
-                        'numberposts' => 6,
+                        'numberposts' => -1,
+                        //'numberposts' => 6,
                         'publish' => 'true'
                     );
                     $news_posts = get_posts( $news_args);
@@ -42,6 +43,7 @@
                     wp_reset_postdata();
                 ?>
         </div>
-        <a href="" class="button centered load-more">БОЛЬШЕ НОВОСТЕЙ</a>
+        <!-- <a href="" class="button centered load-more">БОЛЬШЕ НОВОСТЕЙ</a> -->
+        <a href="<?php echo get_site_url(); ?>" class="button centered">НА ГЛАВНУЮ</a>
       </section>
 <?php get_footer();?>  

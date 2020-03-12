@@ -35,7 +35,7 @@
                 $no_translation = $language['no_translation'];
 
                 // Checks if the page has translation in this language
-                if ( ! $no_translation ) {
+               // if ( ! $no_translation ) {
                     // Check if it's current language
                     if ( $current ) {
                         // Output the language in a <span> tag so it's not clickable
@@ -45,11 +45,11 @@
                         // Output the language in an anchor tag
                         //$output .= "<a href=\"$url\" class=\"languages__item$current\">$slug</a>";
                         $output .= "<li class='lang'><a href=\"$url\">$slug</a></li>";
-                        echo '_lang_'.$slug;
+                        //echo '_lang_'.$slug;
                         $output_toggle= "<a href=\"$url\" >$slug</a>";
                         $output_toggle_invert= "<a href=\"$url\" class='invert-color'>$slug</a>";
                     }
-                }
+               // }
             }
 			if ( is_front_page() || is_home() ) :
                 ?>
@@ -61,36 +61,62 @@
                     <ul class="menu touch">
                         <li class="toggle-wrapper">
                             <div class="toggle touch">
-                                <img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
+                                <?php if( pll_current_language() == 'en'):?>
+                                    <img src="<?php echo get_template_directory_uri()?>/img/logo-dark-en.png" alt="НАШ" class="toggle-logo"/>
+                                <?php else:?>
+                                    <img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
+                                <?php endif; ?>
                                 <!-- <span class="toggle-lang"><a href="">EN</a></span> -->
                                 <span class="toggle-lang"><?php echo $output_toggle;?></span>
                                 <img src="<?php echo get_template_directory_uri()?>/img/close.png" alt="" class="toggle-button">
                             </div>
                         </li>
                         <li class="logo">
-                        <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="НАШ"/></a>
+                            <?php if( pll_current_language() == 'en'):?>
+                                <a href="<?php echo get_site_url().'/en/'; ?>"><img src="<?php echo get_template_directory_uri()?>/img/logo-en.png" alt="НАШ"/></a>
+                            <?php else:?>
+                                <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="НАШ"/></a>
+                            <?php endif; ?>
                         </li>
                         <?php include(get_template_directory(  ).'/templates/template-header-nav.php');?>
                     </ul>
                     <span class="toggle">
-                        <img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="НАШ" class="toggle-logo"/>
+                        <?php if( pll_current_language() == 'en'):?>
+                            <img src="<?php echo get_template_directory_uri()?>/img/logo-en.png" alt="НАШ" class="toggle-logo"/>
+                        <?php else:?>
+                            <img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="НАШ" class="toggle-logo"/>
+                        <?php endif; ?>
                         <!-- <span class="toggle-lang"><a href="" class="invert-color">EN</a></span> -->
                         <span class="toggle-lang"><?php echo $output_toggle_invert;?></span>
                         <img src="<?php echo get_template_directory_uri()?>/img/menu.png" alt="" class="toggle-button">
                     </span>
                     </label>
                 </nav>
-                <section class="intro wrapper">
-                    <p class="intro-text">
-                        ПУТЕШЕСТВИЕ <br>
-                        СКВОЗЬ ВРЕМЯ
-                    </p>
-                    <p class="intro-subtext">
-                        С нами каждый может прикоснуться <br>
-                        прикоснуться к прошедшим тысячелетиям
-                    </p>
-                    <a href="" class="button">ПРИСОЕДЕНИТЬСЯ</a>
-                </section>
+                <?php if( pll_current_language() == 'en'):?>
+                    <section class="intro wrapper">
+                        <p class="intro-text">
+                            JOURNEY <br>
+                            THROUGH THE ERA
+                        </p>
+                        <p class="intro-subtext">
+                            With us everyone can  <br>
+                            touch the past millennia
+                        </p>
+                        <a href="" class="button">JOIN</a>
+                    </section>
+                <?php else:?>
+                    <section class="intro wrapper">
+                        <p class="intro-text">
+                            ПУТЕШЕСТВИЕ <br>
+                            СКВОЗЬ ВРЕМЯ
+                        </p>
+                        <p class="intro-subtext">
+                            С нами каждый может прикоснуться<br>
+                            к прошедшим тысячелетиям
+                        </p>
+                        <a href="" class="button">ПРИСОЕДЕНИТЬСЯ</a>
+                    </section>
+                <?php endif; ?>
 				<?php
 			else :
                 ?>
@@ -101,19 +127,31 @@
                     <ul class="menu touch menu-dark">
                         <li class="toggle-wrapper">
                             <div class="toggle touch">
-                                <img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
-                                <span class="toggle-lang"><a href="">EN</a></span>
+                                <?php if( pll_current_language() == 'en'):?>
+                                    <img src="<?php echo get_template_directory_uri()?>/img/logo-dark-en.png" alt="НАШ" class="toggle-logo"/>
+                                <?php else:?>
+                                    <img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
+                                <?php endif; ?>
+                                <span class="toggle-lang"><?php echo $output_toggle;?></span>
                                 <img src="<?php echo get_template_directory_uri()?>/img/close.png" alt="" class="toggle-button">
                             </div>
                         </li>
                         <li class="logo">
-                        <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ"/></a>
+                            <?php if( pll_current_language() == 'en'):?>
+                                <a href="<?php echo get_site_url().'/en/'; ?>"><img src="<?php echo get_template_directory_uri()?>/img/logo-dark-en.png" alt="НАШ"/></a>
+                            <?php else:?>
+                                <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ"/></a>
+                            <?php endif; ?>
                         </li>
                         <?php include(get_template_directory(  ).'/templates/template-header-nav.php');?>
                     </ul>
                     <span class="toggle">
-                        <img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
-                        <span class="toggle-lang"><a href="">EN</a></span>
+                            <?php if( pll_current_language() == 'en'):?>
+                                <img src="<?php echo get_template_directory_uri()?>/img/logo-dark-en.png" alt="НАШ" class="toggle-logo"/>
+                            <?php else:?>
+                                <img src="<?php echo get_template_directory_uri()?>/img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
+                            <?php endif; ?>
+                        <span class="toggle-lang"><?php echo $output_toggle;?></span>
                         <img src="<?php echo get_template_directory_uri()?>/img/menu.png" alt="" class="toggle-button invert-color">
                     </span>
                     </label>
